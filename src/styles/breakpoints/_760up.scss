@@ -89,7 +89,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 .news {
   &__content {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 70px;
   }

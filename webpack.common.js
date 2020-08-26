@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { ProvidePlugin } = require("webpack");
+const loader = require("sass-loader");
 
 
 module.exports = ({ outputFile, assetFile }) => ({
@@ -37,6 +38,15 @@ module.exports = ({ outputFile, assetFile }) => ({
               outputPath: "images",
               publicPath: "images",
             },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 50,
+              }
+            }
           },
         ],
       },
