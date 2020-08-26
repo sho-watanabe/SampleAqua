@@ -1,0 +1,129 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.header {
+  position: absolute;
+  background-color: transparent;
+  top:0;
+  left: 0;
+  &.fixed{
+    position:fixed;
+    background-color: #282f3590;
+
+    transition: .3s;
+
+  }
+
+  &__nav {
+    display: block;
+    position: static;
+  }
+}
+.nav {
+  &__list {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    margin-bottom: 0;
+  }
+  &__item {
+    margin-right: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+.section {
+  &__wrapper {
+    padding-bottom: 40px;
+  }
+  &__title {
+    font-size: 75px;
+    &::after {
+      width: 200px;
+    }
+  }
+  &__bottom {
+    font-size: 80px;
+  }
+}
+
+.main-copy{
+
+
+    bottom:170px;
+    left:120px;
+    transform: none;
+    white-space:nowrap;
+    color:#fff;
+
+
+  }
+  .en-copy{
+    font-size:87px ;
+    margin-bottom:30px;
+
+
+  }
+  .jp-copy{
+    font-size: 50px;
+    text-align: center;
+
+  }
+  .br{
+      display: none;
+  }
+
+.news {
+  &__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  &__lead {
+    font-size: 37.5px;
+    margin-bottom: 70px;
+  }
+  &__text {
+    max-width: 440px;
+    padding-right: 10px;
+  }
+}
+
+.pu {
+  &__list {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  &__item {
+    width: 32%;
+    margin: 0;
+  }
+}
+
+.pop {
+  &__list {
+    flex-direction: row;
+  }
+  &__item{
+      width:33.3%;
+      & > a{
+        line-height: 320px;
+      }
+  }
+
+}
